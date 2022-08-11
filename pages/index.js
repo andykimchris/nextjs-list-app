@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import testJpg from "../public/Kazam_screenshot_00006.png";
 import { Fragment } from "react";
-import styles from "../styles/Home.module.css";
 import { getAllPosts } from "../utils/mdx";
 
 export default function Home({ posts }) {
@@ -14,16 +13,12 @@ export default function Home({ posts }) {
       </Head>
 
       <div>
-        <h1 className={styles.title}>HomePage</h1>
-        <p className={styles.text}>
-          lorem ipsum dolor sit amet, consectetur adip
-        </p>
-        <p className={styles.text}>
-          lorem ipsum dolor sit amet, consectetur adip
-        </p>
+        <h1>HomePage</h1>
+        <p>lorem ipsum dolor sit amet, consectetur adip</p>
+        <p>lorem ipsum dolor sit amet, consectetur adip</p>
 
         <Link href="/ninjas">
-          <a className={styles.btn}>See Ninja Listing</a>
+          <a>See Ninja Listing</a>
         </Link>
 
         <div className="wrapper">
